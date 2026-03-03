@@ -7,7 +7,7 @@ import profilePicture from '../assets/profile.webp';
 export const aboutMe = {
   name: 'Irvan.',
   role: 'Frontend Developer.',
-  description: 'I build responsive and scalable websites with React, turning design concepts into structured, maintainable frontend code while ensuring usability and consistent user experience across devices.',
+  description: 'I build responsive and scalable websites with ReactJS, turning design concepts into structured, maintainable frontend code while ensuring usability and consistent user experience across devices.',
   socials: [
     { icon: faLinkedin, link: 'https://www.linkedin.com/in/irvandevs/'},
     { icon: faSquareGithub, link: 'https://github.com/irvandevs'},

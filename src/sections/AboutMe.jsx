@@ -25,8 +25,8 @@ export default function AboutMe(){
                                     <TypingAnimation
                                         words={[aboutMe.role]}
                                         typeSpeed={50}
-                                        deleteSpeed={150}
-                                        pauseDelay={2000}
+                                        deleteSpeed={100}
+                                        pauseDelay={1000}
                                         loop
                                     />
                                 </span>

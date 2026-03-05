@@ -10,7 +10,7 @@ export default function Header(){
         <div className='fixed w-full bg-tertiary z-10 px-10 py-8 drop-shadow-sm'>
             <div className='max-w-6xl mx-auto flex justify-between items-center'>
                 {/* headline */}
-                <TextAnimate animation='scaleUp' by='character' duration={0.5} once
+                <TextAnimate animation='fadeIn' by='character' duration={0.5} once
                 className='font-bold text-2xl text-primary'>VAN.PORTFOLIO</TextAnimate>
 
                 {/* link items */}

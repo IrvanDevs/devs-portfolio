@@ -11,8 +11,6 @@ export default {
   			primary: '#1C0770',
   			secondary: '#121212',
   			tertiary: '#F5F5F5',
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
 		},
 		keyframes: {
 			'blink-cursor': {

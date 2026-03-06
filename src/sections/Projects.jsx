@@ -7,7 +7,7 @@ import { projects } from '../data/ProjectsData';
 
 export default function Projects(){
     return(
-        <div className='bg-tertiary px-10'>
+        <div className='bg-tertiary px-10 pb-2'>
             <div className='max-w-6xl mx-auto flex items-center justify-center flex-col py-10'>
                 {/* headlines */}
                 <BlurFade direction='down' duration={0.8} delay={0.2} inView>

@@ -1,3 +1,4 @@
+import {useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -7,9 +8,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // import required modules
-import { EffectFade, Autoplay} from 'swiper/modules';
+import { EffectFade, Autoplay } from 'swiper/modules';
 
 export default function Project({imageSlide, projectTitle, builtWith, projectDesc, webLink, className, textClassName, btnClassName}){
+
     return(
         <div className={`max-w-6xl mx-auto flex justify-center items-center gap-10 ${className}`}>
             {/* img slide */}
@@ -24,7 +26,7 @@ export default function Project({imageSlide, projectTitle, builtWith, projectDes
                 >
                 {imageSlide.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <img src={image} className='w-full h-full object-cover rounded-xl' />
+                        <img src={image} className='w-full h-full object-cover rounded-xl pointer-events-none' />
                     </SwiperSlide>
                 ))}
                 </Swiper>

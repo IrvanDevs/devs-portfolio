@@ -7,7 +7,7 @@ import { skills } from '../data/SkillsData';
 
 export default function Skills(){
     return(
-        <div className='bg-white px-10'>
+        <section id='skills' className='bg-white px-10'>
             <div className='max-w-6xl mx-auto flex items-center justify-center flex-col py-10'>
                 {/* headlines */}
             <BlurFade direction='down' duration={0.8} delay={0.2} inView>
@@ -24,6 +24,6 @@ export default function Skills(){
                     ))}
                 </div>                
             </div>
-        </div>
+        </section>
     )
 }

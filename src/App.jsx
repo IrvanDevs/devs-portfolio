@@ -1,5 +1,6 @@
 import AboutMe from './sections/aboutMe'
 import Header from './sections/header'
+import Projects from './sections/Projects'
 import Skills from './sections/Skills'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <AboutMe />
       <Skills />
+      <Projects />
     </>
   )
 }

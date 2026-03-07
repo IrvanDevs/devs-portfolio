@@ -10,17 +10,17 @@ import { aboutMe } from '../data/AboutMeData';
 export default function AboutMe(){
     return(
         <section id='aboutMe' className='bg-tertiary h-screen px-10'>
-            <div className='max-w-6xl h-screen mx-auto flex items-center justify-between gap-10'>
+            <div className='max-w-6xl h-screen mx-auto flex max-lg:flex-col-reverse items-center justify-center xl:justify-between gap-5 md:gap-10'>
                 {/* information */}
                 <div>
                     {/* headline */}
-                    <div className='font-bold leading-[3.8rem]'>
+                    <div className='font-bold leading-[2.2rem] md:leading-[2.5rem] xl:leading-[3.8rem] max-lg:text-center'>
                          <BlurFade duration={0.7} inView>
-                            <p className='text-[3.9rem] text-secondary'>Hello there, I'm {aboutMe.name}</p>
+                            <p className='text-[2rem] md:text-[2.5rem] xl:text-[3.9rem] text-secondary'>Hello there, I'm {aboutMe.name}</p>
                         </BlurFade>
 
                         <BlurFade duration={0.7} delay={0.2} inView>
-                            <div className='text-[2.7rem] font-bold'> I'm a{' '}
+                            <div className='text-[2rem] xl:text-[2.7rem] font-bold'> I'm a{' '}
                                 <span className='italic text-primary'>
                                     <TypingAnimation
                                         words={[aboutMe.role]}
@@ -36,22 +36,22 @@ export default function AboutMe(){
 
                     {/* horizontal line */}
                     <BlurFade duration={0.7} delay={0.4} direction='right' inView>
-                        <div className='w-[11rem] h-[2px] bg-primary mt-3 rounded-full'></div>
+                        <div className='max-lg:mx-auto w-[5rem] xl:w-[11rem] h-[2px] bg-primary mt-3 rounded-full'></div>
                     </BlurFade>
 
                     {/* description */}
-                    <div className='mt-4 max-fit text-secondary'>
+                    <div className='text-sm xl:text-base max-lg:text-center w-fit md:w-[60%] lg:w-fit max-lg:mx-auto mt-4 text-secondary'>
                         <TextAnimate animation='slideUp' by='word' duration={0.7} delay={0.6}>
                             {aboutMe.description}
                         </TextAnimate>
                     </div>
 
                     {/* socials */}
-                    <div className='flex gap-1 -ml-2 mt-3'>
+                    <div className='flex gap-1 -ml-2 mt-3 justify-center lg:justify-start'>
                         {aboutMe.socials.map((social, index)=>(
                         <BlurFade key={social.link} duration={0.7} delay={0.4 + index * 0.4} direction='up' inView>
                             <a href={social.link} target='_blank'
-                            className='text-4xl text-secondary'>
+                            className='text-3xl xl:text-4xl text-secondary'>
                                 <FontAwesomeIcon icon={social.icon} />
                             </a>
                         </BlurFade>
@@ -62,7 +62,7 @@ export default function AboutMe(){
 
                 {/* image */}
                 <BlurFade duration={1} delay={0.4} direction='left' inView>
-                    <div className='rounded-full overflow-hidden w-[30rem] aspect-square pointer-events-none drop-shadow-md'>
+                    <div className='rounded-full overflow-hidden w-[20rem] md:w-[25rem] xl:w-[30rem] aspect-square pointer-events-none drop-shadow-md'>
                         <img 
                             src={aboutMe.profilePicture} 
                             alt='profile' 

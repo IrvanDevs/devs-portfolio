@@ -5,9 +5,10 @@ import { BlurFade } from '@/components/ui/blur-fade';
 // data
 import { header } from '../data/HeaderData';
 
-export default function Header(){
+export default function DesktopHeader(){
+
     return(
-        <div className='fixed w-full bg-tertiary z-10 px-10 py-8 drop-shadow-sm'>
+        <div className='max-lg:hidden fixed w-full bg-tertiary z-10 px-10 py-8 drop-shadow-sm '>
             <div className='max-w-6xl mx-auto flex justify-between items-center'>
                 {/* headline */}
                 <TextAnimate animation='fadeIn' by='character' duration={0.5} once

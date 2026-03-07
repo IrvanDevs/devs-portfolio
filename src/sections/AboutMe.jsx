@@ -9,10 +9,10 @@ import { aboutMe } from '../data/AboutMeData';
 
 export default function AboutMe(){
     return(
-        <div className='bg-tertiary h-screen px-10'>
+        <section id='aboutMe' className='bg-tertiary h-screen px-10'>
             <div className='max-w-6xl h-screen mx-auto flex items-center justify-between gap-10'>
                 {/* information */}
-                <div className='w-[55%]'>
+                <div>
                     {/* headline */}
                     <div className='font-bold leading-[3.8rem]'>
                          <BlurFade duration={0.7} inView>
@@ -71,6 +71,6 @@ export default function AboutMe(){
                     </div>
                 </BlurFade>
             </div>
-        </div>
+        </section>
     )
 }

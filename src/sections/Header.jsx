@@ -19,7 +19,7 @@ export default function Header(){
                         {header.navList.map((list, index)=>(
                             <BlurFade key={list} duration={0.7} delay={0.2 + index * 0.2} direction='right' inView>
                                 <li className='text-secondary hover:text-primary transition-all duration-500'>
-                                    <a href='#'>{list}</a>
+                                    <a href={list.linkTo}>{list.navTitle}</a>
                                 </li>
                             </BlurFade>
                         ))}

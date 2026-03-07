@@ -12,7 +12,7 @@ export default function Skills(){
             <div className='max-w-6xl mx-auto flex items-center justify-center flex-col'>
                 {/* headlines */}
             <BlurFade direction='down' duration={0.8} delay={0.2} inView>
-                <p animation='fadeIn' by='character' duration={0.5} once
+                <p animation='fadeIn' by='character' duration={0.5}
                 className='text-4xl font-bold text-primary'>{skills.title}</p>
             </BlurFade>
 

@@ -41,7 +41,7 @@ export default function AboutMe(){
 
                     {/* description */}
                     <div className='mt-4 max-fit text-secondary'>
-                        <TextAnimate animation='slideUp' by='word' duration={0.7} delay={0.6} once>
+                        <TextAnimate animation='slideUp' by='word' duration={0.7} delay={0.6}>
                             {aboutMe.description}
                         </TextAnimate>
                     </div>

@@ -14,7 +14,7 @@ export default function MobileHeader(){
         <div className='lg:hidden relative'>
             <div className='fixed w-full h-[6rem] bg-tertiary z-10 px-10 py-6 drop-shadow-sm flex justify-between items-center'>
                 {/* headline */}
-                <p className='font-bold text-2xl text-primary'>{header.title}</p>
+                <p className='font-bold text-xl text-primary'>{header.title}</p>
 
                 {/* link items */}
                 <button onClick={() => setIsOpen(!isOpen)}>

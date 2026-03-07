@@ -14,13 +14,13 @@ export default function AboutMe(){
                 {/* information */}
                 <div>
                     {/* headline */}
-                    <div className='font-bold leading-[2.2rem] md:leading-[2.5rem] xl:leading-[3.8rem] max-lg:text-center'>
+                    <div className='font-bold leading-[1.6rem] md:leading-[2.5rem] xl:leading-[3.8rem] max-lg:text-center'>
                          <BlurFade duration={0.7} inView>
-                            <p className='text-[2rem] md:text-[2.5rem] xl:text-[3.9rem] text-secondary'>Hello there, I'm {aboutMe.name}</p>
+                            <p className='text-[1.7rem] md:text-[2.5rem] xl:text-[3.9rem] text-secondary'>Hello there, I'm {aboutMe.name}</p>
                         </BlurFade>
 
                         <BlurFade duration={0.7} delay={0.2} inView>
-                            <div className='text-[2rem] xl:text-[2.7rem] font-bold'> I'm a{' '}
+                            <div className='text-[1.2rem] md:text-[2rem] xl:text-[2.7rem] font-bold'> I'm a{' '}
                                 <span className='italic text-primary'>
                                     <TypingAnimation
                                         words={[aboutMe.role]}
@@ -62,7 +62,7 @@ export default function AboutMe(){
 
                 {/* image */}
                 <BlurFade duration={1} delay={0.4} direction='left' inView>
-                    <div className='rounded-full overflow-hidden w-[20rem] md:w-[25rem] xl:w-[30rem] aspect-square pointer-events-none drop-shadow-md'>
+                    <div className='rounded-full overflow-hidden w-[15rem] md:w-[25rem] xl:w-[30rem] aspect-square pointer-events-none drop-shadow-md'>
                         <img 
                             src={aboutMe.profilePicture} 
                             alt='profile' 

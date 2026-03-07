@@ -11,7 +11,7 @@ export default function Projects(){
             <div className='max-w-6xl mx-auto flex items-center justify-center flex-col py-8 lg:py-10'>
                 {/* headlines */}
                 <BlurFade direction='down' duration={0.8} delay={0.2} inView>
-                    <p className='text-4xl font-bold text-primary'>PROJECTS</p>     
+                    <p className='text-2xl md:text-4xl font-bold text-primary'>PROJECTS</p>     
                 </BlurFade>
 
                 {/* projects */}

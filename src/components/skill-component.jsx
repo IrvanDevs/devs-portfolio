@@ -9,7 +9,7 @@ export default function Skill({skillCategory, skillBox}){
             {/* skill section */}
             <BlurFade direction='down' duration={0.8} delay={0.2} inView>
                 <div className='bg-primary py-2 px-7 rounded-xl w-fit mx-auto'>
-                    <p className='text-tertiary text-md lg:text-lg font-bold mt-0.5'>{skillCategory}</p>
+                    <p className='text-tertiary text-sm md:text-md lg:text-lg font-bold mt-0.5'>{skillCategory}</p>
                 </div>
             </BlurFade>
 
